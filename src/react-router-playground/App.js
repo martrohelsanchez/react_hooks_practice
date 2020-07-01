@@ -40,6 +40,7 @@ function App() {
               </NavLink>
           </li>
         </ul>
+        <div></div>
 
         <Switch>
           <Route path="/signUp">
