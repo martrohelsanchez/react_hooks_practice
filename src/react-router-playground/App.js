@@ -4,6 +4,7 @@ import {Route, Switch, Link} from 'react-router-dom';
 import LogIn from './components/LogIn';
 import SignUp from './components/SignUp';
 import Shop from './components/Shop';
+import Home from './components/Home'
 
 function App() {
     const [loggedIn, setLoggedIn] = useState(false);
@@ -23,13 +24,16 @@ function App() {
         </ul>
 
         <Switch>
-          <Route exact to="/signUp">
+          <Route exact path='/'>
+            <Home />
+          </Route>
+          <Route exact path="/signUp">
             <SignUp setLoggedIn={setLoggedIn} />
           </Route>
-          <Route exact to="/logIn">
+          <Route exact path="/logIn">
             <LogIn setLoggedIn={setLoggedIn} />
           </Route>
-          <Route exact to="/shop">
+          <Route path="/shop">
             <Shop />
           </Route>
         </Switch>
