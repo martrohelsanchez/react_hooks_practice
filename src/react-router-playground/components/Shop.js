@@ -1,28 +1,39 @@
 import React from 'react';
-import {Route, Switch, Link, useRouteMatch, useParams} from 'react-router-dom';
+import {Route, useHistory, useRouteMatch, useParams, NavLink} from 'react-router-dom';
 
+import styles from "../../styles.css";
 import Products from './Products';
 
 function Shop() {
     const match = useRouteMatch();
     const params = useParams();
+    const history = useHistory();
     console.log(match)
+
+    function handleRedirect() {
+        history.push('/testing')
+    }
 
     return (
       <div>
         <div>Shop</div>
+        <button onClick={handleRedirect}>click meh</button>
 
         <ul>
           <li>
-            <Link to={`${match.url}/ps5`}>PS5</Link>
+            <NavLink to={`${match.url}/ps5`} activeClassName="active">
+              PS5
+            </NavLink>
           </li>
           <li>
-            <Link to={`${match.url}/ryzen`}>Ryzen</Link>
+            <NavLink to={`${match.url}/ryzen`} activeClassName="active">
+              Ryzen
+            </NavLink>
           </li>
         </ul>
 
         <Route path={`${match.url}/:products`}>
-            <Products />
+          <Products />
         </Route>
       </div>
     );

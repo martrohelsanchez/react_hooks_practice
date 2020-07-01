@@ -10,7 +10,7 @@ function SignUp({setLoggedIn}) {
         <div>
             SignUp
         </div>
-        <button onClick={logIn}></button>
+        <button onClick={logIn}>Sign Up</button>
       </div>
     );
 }

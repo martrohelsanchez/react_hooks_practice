@@ -8,7 +8,7 @@ function LogIn({setLoggedIn}) {
     return (
       <div>
         <div>LogIn</div>
-        <button onClick={logIn}></button>
+        <button onClick={logIn}>Log In</button>
       </div>
     );
 }

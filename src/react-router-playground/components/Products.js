@@ -11,10 +11,10 @@ function Products() {
       <div>
         <div>Product:</div>
         <Switch>
-          <Route exact path={`${match.}`}>
+          <Route exact path={`/shop/ps5`}>
             PS5
           </Route>
-          <Route exact path={`${match.url}`}>
+          <Route exact path={`/shop/ryzen`}>
             Ryzen
           </Route>
         </Switch>
