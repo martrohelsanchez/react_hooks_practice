@@ -3,6 +3,7 @@ import {Route, Switch, Link} from 'react-router-dom';
 
 import LogIn from './components/LogIn';
 import SignUp from './components/SignUp';
+import Shop from './components/Shop';
 
 function App() {
     return (
