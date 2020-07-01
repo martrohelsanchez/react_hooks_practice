@@ -1,0 +1,117 @@
+.div {
+    margin: 5px;
+    color: white;
+
+}
+
+.parent {
+    border: 2px solid dodgerblue;
+}
+
+#zaira {
+    background-color: dodgerblue;
+}
+
+.first, .second {
+    background-color: dodgerblue;
+    max-width: 500px;
+    text-align: center;
+}
+
+.first {
+    height: 50px;
+    overflow: auto;
+    font-size: 1.5em;
+}
+
+.second {
+    font-size: 2em;
+    font-family: sans-serif;
+}
+
+span {
+    margin: 5px;
+}
+
+#dela {
+    color: black;
+    opacity: default;
+}
+
+img {
+    width: 100px;
+    margin: 0px 0px 0px 5px;
+    float: right;
+}
+
+.float {
+    border: 5px solid tomato;
+    padding: 5px;
+    max-width: 300px;
+    color: black;
+    overflow: auto;
+    text-align: right;
+}
+
+.react {
+    clear: both;
+}
+
+.testing-span {
+    background-color: green;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    height: 7000px; /* <span> ignore height/width property */
+}
+
+.testing2 {
+    margin: 60px; /* span doesn't honor top/bottom margin but only left/right */
+}
+
+.a {
+    text-decoration: none;
+    color: white;
+    background-color: tomato;
+    margin: 10px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+}
+
+.align {
+    color: black;
+    border: 3px solid tomato;
+    padding: 5px;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin: auto;
+    text-align: center;
+}
+
+::selection {
+    background-color: coral;
+    color: white;
+}
+
+.relative {
+    border: 3px solid orangered;
+    width: 10%;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+    left: 0px;
+    bottom: 500px;
+}
+
+.sticky {
+    border: 3px solid orange;
+    color: white;
+    background-color: green;
+    width: 30%;
+    position: sticky;
+    top: 0;
+    left: 80px;
+}

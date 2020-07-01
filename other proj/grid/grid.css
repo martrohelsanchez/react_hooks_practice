@@ -1,0 +1,33 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 10px;
+    grid-template-areas: 
+        "header header header"
+        "content . ads"
+        "footer footer footer";
+    grid-auto-rows: 100px;
+
+}
+
+.wrapper > div {
+    background-color: lawngreen;
+    padding: 10px;
+    text-align: center;
+}
+
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: content;
+}
+
+.item3 {
+    grid-area: ads;
+}
+
+.item4 {
+    grid-area: footer;
+}

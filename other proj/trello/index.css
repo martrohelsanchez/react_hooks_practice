@@ -1,0 +1,9 @@
+.list {
+    border: 1px solid black;
+    box-sizing: border-box;
+    position: relative;
+}
+
+::selection {
+    background-color: transparent;
+}

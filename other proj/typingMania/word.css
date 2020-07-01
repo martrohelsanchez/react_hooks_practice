@@ -1,0 +1,12 @@
+.word {
+    text-align: center;
+}
+
+input {
+    margin: auto;
+    display: block;
+}
+
+.highlighted {
+    color: red;
+}
