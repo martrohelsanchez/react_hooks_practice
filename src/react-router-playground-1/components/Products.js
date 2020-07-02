@@ -1,11 +1,14 @@
 import React from 'react';
-import {useParams, Switch, Route, useRouteMatch} from 'react-router-dom';
+import {useParams, Switch, Route, useRouteMatch, useLocation} from 'react-router-dom';
 
 function Products() {
     const match = useRouteMatch();
     const params = useParams();
-    console.log(match);
-    console.log(params)
+    const location = useLocation();
+    console.log('match ', match);
+    console.log('Location ', location)
+    console.log('params ', params);
+    console.log('')
 
     return (
       <div>
