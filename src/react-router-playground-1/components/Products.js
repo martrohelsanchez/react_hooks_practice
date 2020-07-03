@@ -23,7 +23,6 @@ function Products() {
         </Switch>
       </div>
     );
-    dsfasf
 }
 
 export default Products
