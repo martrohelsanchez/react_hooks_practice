@@ -23,6 +23,7 @@ function Products() {
         </Switch>
       </div>
     );
+    sadfas
 }
 
 export default Products
