@@ -23,7 +23,6 @@ function Products() {
         </Switch>
       </div>
     );
-    asdfa
 }
 
 export default Products
